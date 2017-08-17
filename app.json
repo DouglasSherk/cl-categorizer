@@ -1,0 +1,16 @@
+{
+  "name": "tBarter Craigslist Post Categorizer",
+  "description": "Automatically categorizes Craigslist posts for tBarter",
+  "image": "heroku/python",
+  "repository": "https://github.com/tbartercom/cl-categorizer",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python3 server.py",
+        "test": "python3 server.py"
+      }
+    }
+  }
+}
